@@ -1,4 +1,5 @@
 FROM ubuntu
 
-RUN apt-get update
-RUN apt-get install openssl
+RUN apt-get update && \
+    apt-get install openssl
+ADD generate /opt
